@@ -1,6 +1,4 @@
-
 Contributor:Dipin R[github.com/kingaa2k9]
-
  
 process.stdin.resume();
 process.stdin.setEncoding("utf-8");
@@ -15,13 +13,16 @@ process.stdin.on("end", function () {
 });
  
 function main(input) {
-    let s=input.split(' ');
-    s.sort((a,b)=>a-b);
-    process.stdout.write(s[s.length-1]);
     
+    if(input%5===0){
+        console.log(parseInt(input/5));
+    }
+    else
+    {
+        console.log(parseInt(input/5)+1);
+    }
 }
  
-
+// Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
+ 
 Language: JavaScript(Node.js)
-
-

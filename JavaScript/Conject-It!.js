@@ -1,6 +1,5 @@
-
+ 
 Contributor:Dipin R[github.com/kingaa2k9]
-
  
 process.stdin.resume();
 process.stdin.setEncoding("utf-8");
@@ -11,17 +10,21 @@ process.stdin.on("data", function (input) {
 });
  
 process.stdin.on("end", function () {
-   main(stdin_input);
+  main(stdin_input);
 });
  
 function main(input) {
-    let s=input.split(' ');
-    s.sort((a,b)=>a-b);
-    process.stdout.write(s[s.length-1]);
-    
+    let q=parseInt(input);
+    while(q--){
+    console.log("YES\n");
+    }// Writing output to STDOUT
 }
  
 
+ 
+ 
+
+ 
+ 
+ 
 Language: JavaScript(Node.js)
-
-

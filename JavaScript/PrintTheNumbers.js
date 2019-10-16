@@ -1,7 +1,5 @@
-
 Contributor:Dipin R[github.com/kingaa2k9]
 
- 
 process.stdin.resume();
 process.stdin.setEncoding("utf-8");
 var stdin_input = "";
@@ -15,13 +13,10 @@ process.stdin.on("end", function () {
 });
  
 function main(input) {
-    let s=input.split(' ');
-    s.sort((a,b)=>a-b);
-    process.stdout.write(s[s.length-1]);
-    
+    var data=input.split('\n');
+    process.stdout.write(data[1]);       // Writing output to STDOUT
 }
- 
+
+
 
 Language: JavaScript(Node.js)
-
-

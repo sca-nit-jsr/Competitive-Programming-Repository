@@ -1,6 +1,4 @@
-
 Contributor:Dipin R[github.com/kingaa2k9]
-
  
 process.stdin.resume();
 process.stdin.setEncoding("utf-8");
@@ -15,13 +13,13 @@ process.stdin.on("end", function () {
 });
  
 function main(input) {
-    let s=input.split(' ');
-    s.sort((a,b)=>a-b);
-    process.stdout.write(s[s.length-1]);
-    
+    var i="";
+    i=(input%3===0)?'YES':'NO';
+        process.stdout.write(i);
+    // Writing output to STDOUT
 }
+ 
+// Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
  
 
 Language: JavaScript(Node.js)
-
-
