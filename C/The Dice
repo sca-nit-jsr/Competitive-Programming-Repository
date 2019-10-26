@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    char s[100000];
+    int i,c=0;
+    scanf("%s",s);
+    for(i=0;s[i]!='\0';i++)
+    {
+        if(s[i]=='6')
+            continue;
+        else 
+            c++;
+
+    }
+    if(s[i-1]=='6')
+    printf("-1");
+    else
+    printf("%d",c);
+    return 0;
+}
