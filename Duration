@@ -1,0 +1,20 @@
+ #include<stdio.h>
+int main()
+{
+    int n,sh,sm,eh,em,i,j,s1[100]={0},s2[100]={0},hh,mm,res;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        scanf("%d%d%d%d",&sh,&sm,&eh,&em);
+     for(j=0;j<1;j++)
+     {
+     s1[j]=sh*60+sm;
+     s2[j]=eh*60+em;
+     res=(s2[j]-s1[j]);
+        mm=res%60;
+        hh=res/60;
+     printf("%d %d\n",hh,mm);
+     }
+    }
+    return 0;
+}
